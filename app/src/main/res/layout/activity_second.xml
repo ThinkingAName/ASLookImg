@@ -3,12 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="zx.cn.com.myapplication.MainActivity">
+    android:layout_height="match_parent">
 
 
     <LinearLayout
-        android:id="@+id/btn_tools"
+        android:id="@+id/btn_tools_sec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -18,30 +17,29 @@
         >
 
         <Button
-            android:id="@+id/btn_show"
+            android:id="@+id/btn_show_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一张"/>
+        <Button
+            android:id="@+id/btn_show_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="下一张"/>
         <Button
-            android:id="@+id/btn_refresh"
+            android:id="@+id/btn_refresh_sec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="换一批"
-            />
-        <Button
-            android:id="@+id/btn_to_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="使用图片框架"
             />
     </LinearLayout>
 
 
     <ImageView
-        android:id="@+id/img_show"
+        android:id="@+id/img_show_sec"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btn_tools"
+        android:layout_above="@+id/btn_tools_sec"
         android:background="#0088ff"/>
 
 </RelativeLayout>
