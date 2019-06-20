@@ -1,5 +1,6 @@
 package zx.cn.com.myapplication;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements
     private int page = 1;
     private SisterApi sisterApi;
     private Button refreshBtn;
+    private Button toSecondBtn;
 
 
     @Override
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_to_second:
+                Intent intent = new Intent(this,SecondActivity.class);
+                startActivity(intent);
+                break;
             case R.id.btn_show:
                 if (curPos > 9) {
                     curPos = 0;
@@ -57,10 +63,12 @@ public class MainActivity extends AppCompatActivity implements
     private void initUI() {
         showBtn = findViewById(R.id.btn_show);
         showImg = findViewById(R.id.img_show);
+        toSecondBtn = findViewById(R.id.btn_to_second);
         refreshBtn = findViewById(R.id.btn_refresh);
 
         showBtn.setOnClickListener(this);
         refreshBtn.setOnClickListener(this);
+        toSecondBtn.setOnClickListener(this);
 
     }
 
