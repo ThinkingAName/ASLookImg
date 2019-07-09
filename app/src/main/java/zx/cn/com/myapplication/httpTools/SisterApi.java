@@ -105,7 +105,8 @@ public class SisterApi {
             sister.setSource(results.getString("source"));
             sister.setType(results.getString("type"));
             sister.setUrl(results.getString("url"));
-            sister.setUsed(results.getBoolean("used"));
+            //sister.setUsed(results.getInt("used"));
+            sister.setUsed(1);
             sister.setWho(results.getString("who"));
             sisters.add(sister);
         }

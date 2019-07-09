@@ -17,7 +17,7 @@ public class Sister {
     private String source;
     private String type;
     private String url;
-    private boolean used;
+    private int used; //0:未使用，1：使用
     private String who;
 
     public String get_id() {
@@ -77,11 +77,11 @@ public class Sister {
         this.url = url;
     }
 
-    public boolean isUsed() {
+
+    public int getUsed() {
         return used;
     }
-
-    public void setUsed(boolean used) {
+    public void setUsed( int used) {
         this.used = used;
     }
 

@@ -110,6 +110,8 @@ public class DiskCacheHelper {
         if (mDiskLruCache == null) {
             return null;
         }
+
+        
         try {
             DiskLruCache.Editor editor = mDiskLruCache.edit(key);
             if (editor != null) {
