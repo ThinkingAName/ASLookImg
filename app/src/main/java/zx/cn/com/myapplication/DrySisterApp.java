@@ -3,6 +3,8 @@ package zx.cn.com.myapplication;
 import android.app.Application;
 import android.content.Context;
 
+import zx.cn.com.myapplication.helper.CrashLogHelper;
+
 /**
  * Description:  Application类
  * Name:$name$
@@ -18,7 +20,7 @@ public class DrySisterApp extends Application{
     public void onCreate() {
         super.onCreate();
         context = this;
-        //CrashHandler.getInstance().init(this);
+        CrashLogHelper.getInstance().init(this);
     }
 
     public static DrySisterApp getContext() {

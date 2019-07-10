@@ -20,17 +20,17 @@
             android:id="@+id/btn_show_before"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="上一张"/>
+            android:text="@string/before"/>
         <Button
             android:id="@+id/btn_show_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="下一张"/>
+            android:text="@string/next"/>
         <Button
             android:id="@+id/btn_cleardb_sec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="清楚数据库"
+            android:text="@string/clearDB"
             />
     </LinearLayout>
 
@@ -38,8 +38,10 @@
     <ImageView
         android:id="@+id/img_show_sec"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/btn_tools_sec"
+        android:adjustViewBounds="true"
         android:background="#0088ff"/>
+    <!--android:adjustViewBounds="true" 宽高按比例缩放-->
 
 </RelativeLayout>

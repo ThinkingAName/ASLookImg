@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements
                 startActivity(intent);
                 break;
             case R.id.btn_show:
+                int a = 1/0;
                 if (curPos > 9) {
                     curPos = 0;
                 }
